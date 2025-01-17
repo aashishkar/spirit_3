@@ -13,7 +13,7 @@ class LoginView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.amberAccent,
       body: SafeArea(
         child: Form(
           key: _formKey,
@@ -23,25 +23,6 @@ class LoginView extends StatelessWidget {
                 padding: const EdgeInsets.all(8),
                 child: Column(
                   children: [
-                    // App Logo and Name
-                    Column(
-                      children: [
-                        Image.asset(
-                          'assets/images/logo1.png',
-                          height: 60,
-                          width: 100,
-                        ),
-                        const SizedBox(height: 10),
-                        const Text(
-                          'Hunger End', //
-                          style: TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold,
-                            color: Color(0xFFFE5404), //
-                          ),
-                        ),
-                      ],
-                    ),
                     const SizedBox(height: 30),
                     const Text(
                       'Login',
