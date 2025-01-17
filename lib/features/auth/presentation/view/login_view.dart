@@ -146,55 +146,6 @@ class LoginView extends StatelessWidget {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 20),
-                    const Row(
-                      children: [
-                        Expanded(child: Divider(color: Colors.grey)),
-                        Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 10),
-                          child: Text('OR'),
-                        ),
-                        Expanded(child: Divider(color: Colors.grey)),
-                      ],
-                    ),
-                    const SizedBox(height: 20),
-                    ElevatedButton.icon(
-                      onPressed: () {
-                        // Handle Facebook login
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.blue,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30),
-                        ),
-                        padding: const EdgeInsets.symmetric(vertical: 15),
-                        minimumSize: const Size(double.infinity, 50),
-                      ),
-                      icon: const Icon(Icons.facebook, color: Colors.white),
-                      label: const Text(
-                        'Login with Facebook',
-                        style: TextStyle(fontSize: 18, color: Colors.white),
-                      ),
-                    ),
-                    const SizedBox(height: 10),
-                    ElevatedButton.icon(
-                      onPressed: () {
-                        // Handle Google login
-                      },
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.red,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30),
-                        ),
-                        padding: const EdgeInsets.symmetric(vertical: 15),
-                        minimumSize: const Size(double.infinity, 50),
-                      ),
-                      icon: const Icon(Icons.g_mobiledata, color: Colors.white),
-                      label: const Text(
-                        'Login with Google',
-                        style: TextStyle(fontSize: 18, color: Colors.white),
-                      ),
-                    ),
                   ],
                 ),
               ),

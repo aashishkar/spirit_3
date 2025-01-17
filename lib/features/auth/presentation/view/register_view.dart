@@ -138,9 +138,6 @@ class _RegisterViewState extends State<RegisterView> {
                     decoration: InputDecoration(
                         filled: true,
                         fillColor: Colors.white,
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30),
-                        ),
                         labelText: 'First Name',
                         prefixIcon: const Icon(Icons.person)),
                     validator: ((value) {
@@ -156,9 +153,6 @@ class _RegisterViewState extends State<RegisterView> {
                     decoration: InputDecoration(
                       filled: true,
                       fillColor: Colors.white,
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(30),
-                      ),
                       labelText: 'Last Name',
                       prefixIcon: const Icon(Icons.person),
                     ),
@@ -175,9 +169,6 @@ class _RegisterViewState extends State<RegisterView> {
                     decoration: InputDecoration(
                         filled: true,
                         fillColor: Colors.white,
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30),
-                        ),
                         labelText: 'Phone Number',
                         prefixIcon: const Icon(Icons.phone)),
                     validator: ((value) {
@@ -193,9 +184,6 @@ class _RegisterViewState extends State<RegisterView> {
                     decoration: InputDecoration(
                         filled: true,
                         fillColor: Colors.white,
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30),
-                        ),
                         labelText: 'Email',
                         prefixIcon: const Icon(Icons.email)),
                     validator: ((value) {
@@ -212,9 +200,6 @@ class _RegisterViewState extends State<RegisterView> {
                     decoration: InputDecoration(
                         filled: true,
                         fillColor: Colors.white,
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30),
-                        ),
                         labelText: 'Password',
                         prefixIcon: Icon(Icons.lock)),
                     validator: ((value) {
@@ -231,9 +216,6 @@ class _RegisterViewState extends State<RegisterView> {
                     decoration: InputDecoration(
                       filled: true,
                       fillColor: Colors.white,
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(30),
-                      ),
                       labelText: 'Confirm Password',
                       prefixIcon: Icon(Icons.lock),
                     ),
@@ -308,10 +290,7 @@ class _RegisterViewState extends State<RegisterView> {
                         }
                       },
                       style: ElevatedButton.styleFrom(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(
-                              30), // Set the border radius
-                        ),
+                        shape: RoundedRectangleBorder(),
                       ),
                       child: const Text(
                         'Sign Up',
