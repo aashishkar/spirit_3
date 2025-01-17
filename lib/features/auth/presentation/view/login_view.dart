@@ -35,15 +35,11 @@ class LoginView extends StatelessWidget {
                     TextFormField(
                       key: const ValueKey('email'),
                       controller: _emailController,
-                      obscureText: true,
                       decoration: InputDecoration(
                         filled: true,
                         fillColor: Colors.white,
                         labelText: 'Email',
                         prefixIcon: const Icon(Icons.email),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30),
-                        ),
                       ),
                       validator: (value) {
                         if (value!.isEmpty) {
@@ -62,9 +58,6 @@ class LoginView extends StatelessWidget {
                         fillColor: Colors.white,
                         labelText: 'Password',
                         prefixIcon: const Icon(Icons.lock),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30),
-                        ),
                       ),
                       validator: ((value) {
                         if (value == null || value.isEmpty) {
@@ -101,11 +94,6 @@ class LoginView extends StatelessWidget {
                               );
                         }
                       },
-                      style: ElevatedButton.styleFrom(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30),
-                        ),
-                      ),
                       child: const SizedBox(
                         height: 50,
                         child: Center(
