@@ -23,14 +23,12 @@ class _OnboardingScreenState extends State<OnboardingView> {
     {
       "image": "assets/images/jewelry.png",
       "title": "All Your Favourites",
-      "description":
-          "Get your favourite meals delivered fresh and fast with just a few taps!"
+      "description": "Browse our exquisite range of jewelry tailored for you."
     },
     {
       "image": "assets/images/jewelry.png",
-      "title": "Super Fast Delivery",
-      "description":
-          "Easily find your type of food craving and you will get fast delivery in wide range."
+      "title": "Elegance Design",
+      "description": "Discover timeless elegance and exclusive designs."
     },
   ];
 
@@ -84,11 +82,11 @@ class _OnboardingScreenState extends State<OnboardingView> {
           alignment: Alignment.center,
           children: [
             Container(
-              height: 250,
-              width: 250,
+              height: 10,
+              width: 10,
               decoration: BoxDecoration(
                 color: Colors.deepPurple.shade50,
-                shape: BoxShape.circle,
+                shape: BoxShape.rectangle,
               ),
             ),
             Image.asset(

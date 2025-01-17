@@ -29,10 +29,10 @@ class _SplashViewState extends State<SplashView> {
                 SizedBox(
                   height: 100,
                   width: 100,
-                  child: Image.asset('assets/images/logo1.png'),
+                  child: Image.asset('assets/images/jewelry.png'),
                 ),
                 const Text(
-                  'Hunger End',
+                  'Jewelry',
                   style: TextStyle(
                     fontSize: 25,
                     color: Color(0xFFFE5404),
@@ -49,7 +49,7 @@ class _SplashViewState extends State<SplashView> {
             bottom: 10,
             left: MediaQuery.of(context).size.width / 4,
             child: const Text(
-              'Developed by: Santosh KC',
+              'Developed by: Aashish Karmacharya',
               style: TextStyle(fontSize: 15),
             ),
           ),
