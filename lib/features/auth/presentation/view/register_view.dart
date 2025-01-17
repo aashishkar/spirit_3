@@ -2,8 +2,8 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:spirit3/features/auth/presentation/view_model/signup/register_bloc.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:spirit3/features/auth/presentation/view_model/signup/register_bloc.dart';
 
 class RegisterView extends StatefulWidget {
   const RegisterView({super.key});
@@ -41,7 +41,7 @@ class _RegisterViewState extends State<RegisterView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.amberAccent,
       appBar: AppBar(
         backgroundColor: Color(0xFFFE5404),
         elevation: 0,
@@ -120,7 +120,7 @@ class _RegisterViewState extends State<RegisterView> {
                             backgroundImage: _selectedImage != null
                                 ? FileImage(_selectedImage!)
                                 : const AssetImage(
-                                    'assets/images/profile.jpg',
+                                    'assets/images/profile.png',
                                   ) as ImageProvider,
                           ),
                         ),
@@ -136,6 +136,8 @@ class _RegisterViewState extends State<RegisterView> {
                   TextFormField(
                     controller: _fnameController,
                     decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(30),
                         ),
@@ -152,6 +154,8 @@ class _RegisterViewState extends State<RegisterView> {
                   TextFormField(
                     controller: _lnameController,
                     decoration: InputDecoration(
+                      filled: true,
+                      fillColor: Colors.white,
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
                       ),
@@ -169,6 +173,8 @@ class _RegisterViewState extends State<RegisterView> {
                   TextFormField(
                     controller: _phoneController,
                     decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(30),
                         ),
@@ -185,6 +191,8 @@ class _RegisterViewState extends State<RegisterView> {
                   TextFormField(
                     controller: _emailController,
                     decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(30),
                         ),
@@ -202,6 +210,8 @@ class _RegisterViewState extends State<RegisterView> {
                     controller: _passwordController,
                     obscureText: true,
                     decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(30),
                         ),
@@ -219,6 +229,8 @@ class _RegisterViewState extends State<RegisterView> {
                     controller: _confirmPasswordController,
                     obscureText: true,
                     decoration: InputDecoration(
+                      filled: true,
+                      fillColor: Colors.white,
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
                       ),
@@ -319,7 +331,7 @@ class _RegisterViewState extends State<RegisterView> {
                         child: const Text(
                           'Sign In',
                           style: TextStyle(
-                            color: Color(0xFFFE5404),
+                            color: Color.fromARGB(255, 0, 0, 0),
                             fontWeight: FontWeight.bold,
                           ),
                         ),

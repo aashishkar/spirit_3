@@ -37,6 +37,8 @@ class LoginView extends StatelessWidget {
                       controller: _emailController,
                       obscureText: true,
                       decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
                         labelText: 'Email',
                         prefixIcon: const Icon(Icons.email),
                         border: OutlineInputBorder(
@@ -56,6 +58,8 @@ class LoginView extends StatelessWidget {
                       controller: _passwordController,
                       obscureText: true,
                       decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
                         labelText: 'Password',
                         prefixIcon: const Icon(Icons.lock),
                         border: OutlineInputBorder(
@@ -78,7 +82,7 @@ class LoginView extends StatelessWidget {
                         child: const Text(
                           'Forgot Password?',
                           style: TextStyle(
-                            color: Colors.grey,
+                            color: Colors.black,
                             fontSize: 16,
                           ),
                         ),
@@ -135,7 +139,7 @@ class LoginView extends StatelessWidget {
                           child: const Text(
                             'Create Account',
                             style: TextStyle(
-                              color: Color(0xFFFE5404),
+                              color: Color.fromARGB(255, 0, 0, 0),
                               fontWeight: FontWeight.bold,
                             ),
                           ),
